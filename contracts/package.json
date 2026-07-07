@@ -1,0 +1,21 @@
+{
+  "name": "warden-contracts",
+  "version": "0.1.0",
+  "private": true,
+  "description": "WardenGuard — on-chain policy firewall for autonomous agents on BOT Chain",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.ts --network botTestnet",
+    "screen": "hardhat run scripts/screen.ts --network botTestnet",
+    "screen:inject": "cross-env INJECT=1 hardhat run scripts/screen.ts --network botTestnet"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "hardhat": "^2.22.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
