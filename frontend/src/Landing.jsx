@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "./Landing.css";
 
 /* Fill these in before you ship. */
-const REPO_URL = "https://github.com/zenonchain/warden";
+const REPO_URL = "https://github.com/zenweb3/warden";
 const TWEET_URL = "#"; // your showcase tweet, once posted
 const GUARD_ADDRESS = "0x7B4F794C9639C22095251ad18851bc2ce8F81908";
 const EXPLORER = "https://scan.bohr.life";
