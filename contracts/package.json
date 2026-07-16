@@ -7,6 +7,8 @@
     "compile": "hardhat compile",
     "test": "hardhat test",
     "deploy": "hardhat run scripts/deploy.ts --network botTestnet",
+    "deploy:mainnet": "hardhat run scripts/deploy.ts --network botMainnet",
+    "rotate-agent": "hardhat run scripts/rotate-agent.ts --network botMainnet",
     "screen": "hardhat run scripts/screen.ts --network botTestnet",
     "screen:inject": "cross-env INJECT=1 hardhat run scripts/screen.ts --network botTestnet"
   },
