@@ -19,7 +19,7 @@ export default function AuditTape({ feed, scrollRef }) {
               {e.injected && <span className="tr-inj">INJ</span>}
               <span className="tr-t mono">{e.time}</span>
             </div>
-            <div className="tr-swap mono">{e.action.tokenIn} → {e.action.tokenOut} · {fmt(e.action.value)} tBOT</div>
+            <div className="tr-swap mono">{e.action.tokenIn} → {e.action.tokenOut} · {fmt(e.action.value)} BOT</div>
             {e.status === "blocked" && e.reasons?.length > 0 && <div className="tr-why mono">✕ {e.reasons.join(" · ")}</div>}
             <div className="tr-meta mono">
               {e.tx && (

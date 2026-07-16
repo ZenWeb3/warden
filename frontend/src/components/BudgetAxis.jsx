@@ -9,7 +9,7 @@ export default function BudgetAxis({ spentToday, pct, policy = POLICY }) {
       <div className="axis-head">
         <span className="axis-title">SESSION-KEY BUDGET · cryptographically capped</span>
         <span className="axis-val mono">
-          {spentToday.toFixed(2)}<i> / {cap.toFixed(2)} tBOT</i>
+          {spentToday.toFixed(2)}<i> / {cap.toFixed(2)} BOT</i>
         </span>
       </div>
       <div className="axis-track">

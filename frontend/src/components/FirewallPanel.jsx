@@ -32,7 +32,7 @@ export default function FirewallPanel({ phase, proposal, sigStatus, active }) {
               <div className="rec-row">
                 <span className="rec-k">PROPOSED</span>
                 <span className="rec-swap mono">{proposal.action.tokenIn} → {proposal.action.tokenOut}</span>
-                <span className="rec-amt mono">{fmt(proposal.action.value)} tBOT</span>
+                <span className="rec-amt mono">{fmt(proposal.action.value)} BOT</span>
               </div>
               <div className="rec-row sub">
                 <span className="rec-k">PARAMS</span>

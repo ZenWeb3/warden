@@ -17,7 +17,7 @@ import {
  * NOTE: the agent key sits in the client bundle so the agent can auto-sign.
  * Use a THROWAWAY testnet key only.
  */
-export const RPC = import.meta.env.VITE_RPC || "https://rpc.bohr.life";
+export const RPC = import.meta.env.VITE_RPC || "https://rpc.botchain.ai";
 export const GUARD_ADDRESS = import.meta.env.VITE_GUARD_ADDRESS || "";
 export const ALLOWED_DEST = import.meta.env.VITE_ALLOWED_DEST || "";
 const AGENT_KEY = import.meta.env.VITE_AGENT_PRIVATE_KEY || "";
@@ -92,7 +92,7 @@ export async function readDecisions(maxBlocks = 9000) {
         tx: l.transactionHash,
         reasons: executed ? [] : [a.reason],
         action: {
-          tokenIn: "tBOT",
+          tokenIn: "BOT",
           tokenOut: shortAddr(a.dest),
           value: Number(formatEther(a.amount)),
         },

@@ -24,12 +24,12 @@ export default function AgentPanel({
             <tr>
               <td>spend / tx</td>
               <td className="mono r">
-                ≤ {policy.spendCapPerTx.toFixed(2)} tBOT
+                ≤ {policy.spendCapPerTx.toFixed(2)} BOT
               </td>
             </tr>
             <tr>
               <td>daily budget</td>
-              <td className="mono r">≤ {policy.dailyCap.toFixed(2)} tBOT</td>
+              <td className="mono r">≤ {policy.dailyCap.toFixed(2)} BOT</td>
             </tr>
             <tr>
               <td>allowlist</td>

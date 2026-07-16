@@ -1,18 +1,18 @@
 // Central config — chain + firewall policy. Everything imports from here.
 
 export const CHAIN = {
-  id: 968,
-  name: "BOT CHAIN TESTNET",
-  rpc: "rpc.bohr.life",
-  explorer: "https://scan.bohr.life",
-  baseBlock: 8988736,
+  id: 677,
+  name: "BOT CHAIN",
+  rpc: "rpc.botchain.ai",
+  explorer: "https://scan.botchain.ai",
+  baseBlock: 16311786,
 };
 
 export const POLICY = {
   spendCapPerTx: 25,
   dailyCap: 60,
   allowlist: ["WBOT", "USDC", "wETH"],
-  chainLock: 968,
+  chainLock: 677,
   cooldownMs: 8000,
   maxSlippageBps: 150,
 };

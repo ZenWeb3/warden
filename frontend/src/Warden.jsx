@@ -139,7 +139,7 @@ export default function Warden() {
         <span>WARDEN // {CHAIN.rpc} // paymaster via MegaFuel</span>
         <span className="foot-r">
           {wired
-            ? <>LIVE · guard {short(chain.GUARD_ADDRESS)} · real tx on scan.bohr.life</>
+            ? <>LIVE · guard {short(chain.GUARD_ADDRESS)} · real tx on {CHAIN.explorer.replace("https://", "")}</>
             : <>SIM · set VITE_GUARD_ADDRESS + VITE_AGENT_PRIVATE_KEY to go live</>}
         </span>
       </div>
